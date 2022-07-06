@@ -1,6 +1,6 @@
-// SPDX-Licence-Identifier: MIT
+// SPDX-License-Identifier: MIT
 
-pragma solidity 0.8.13;
+pragma solidity ^0.8.0;
 
 error MUNICIPALITY_NOT_REGISTERED();
 error INVALID_PERSON_RESIDENCY(bytes4 actual, bytes4 required);
@@ -52,7 +52,7 @@ struct Parents {
 
 struct Children {
     bool hasChildren;
-    address[3] childrenAccounts;
+    address[] childrenAccounts;
 }
 
 struct CurrentAddress {
